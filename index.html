@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModernShop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/phosphor-icons"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">ModernShop</div>
+            <div class="nav-items">
+                <a href="#" class="active">Home</a>
+                <a href="#" id="categories-btn">Categorias</a>
+                <a href="#" id="offers-btn">Ofertas</a>
+                <a href="#" id="contact-btn">Contato</a>
+            </div>
+            <div class="cart-icon" id="cart-icon">
+                <i class="ph-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Descubra produtos incríveis</h1>
+            <p>Explore nossa coleção e encontre o que você precisa</p>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Buscar produtos...">
+                <button id="search-button"><i class="ph-magnifying-glass"></i></button>
+            </div>
+        </section>
+
+        <section class="products">
+            <h2>Produtos em destaque</h2>
+            <div id="products-container" class="products-grid"></div>
+        </section>
+    </main>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <h2>Seu Carrinho</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total"></div>
+            <button id="checkout-btn">Finalizar Compra</button>
+            <button id="close-cart" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+    <div id="categories-modal" class="modal">
+        <div class="modal-content">
+            <h2>Categorias</h2>
+            <div id="category-list"></div>
+            <button id="close-categories" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+    <div id="offers-modal" class="modal">
+        <div class="modal-content">
+            <h2>Ofertas Especiais</h2>
+            <div id="offers-list"></div>
+            <button id="close-offers" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <h2>Entre em Contato</h2>
+            <p><strong>ModernShop Ltda.</strong></p>
+            <p>Telefone: (85) 123deOliverira-4</p>
+            <p>Email: contato@modernshop.com</p>
+            <p>Endereço: Rua da AiDentro, 123 - Fortaleza, CE</p>
+            <button id="close-contact" class="close-btn">&times;</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 ModernShop. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
